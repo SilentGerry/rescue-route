@@ -68,8 +68,11 @@ def validate_recipiets(recipients):
 		seen_ids.add(recipient_id)
 		if not isinstance(org_name, str) or not org_name.strip():
 			raise ValueError(f"Recipient {recipient_id} must include the organization's name.")
-		if not isinstance(accepted_food_types, (list, np.ndarray)) or not bool(accepted_food_types):
+		if not isinstance(accepted_food_types, list) or not bool(accepted_food_types):
 			raise ValueError(f"Recipient {recipient_id} must include what food types it accepts as donations.")
+		for accepted_food_type in accepted_food_types:
+			if not isinstance(accepted_food_type, str) or accepted_food_type.strip():
+				raise ValueError(f"Recipient {recipient_id} accepted food types must be non-empty strings.")
 		if not isinstance(capacity, int) or not capacity > 0:
 			raise ValueError(f"Recipient {recipient_id} must have a capacity greater than 0 to receive donations.")
 		if not isinstance(location, int):
@@ -94,8 +97,11 @@ def validate_volunteers(volunteers):
 			raise ValueError(f"Volunteer {volunteer_id} must a capacity greater than 0 for donation pickups and dropoffs.")
 		if not isinstance(location, int) or not location >= 0:
 			raise ValueError(f"Volunteer {volunteer_id} must have a location for donation pickups and dropoffs.")
-		if not isinstance(availability, (list, np.ndarray)) or not bool(availability):
-			raise ValueError(f"Volunteer {recipient_id} must have list of available days for pickups and dropoffs.")
+		if not isinstance(availability, list) or not bool(availability):
+			raise ValueError(f"Volunteer {volunteer_id} must have list of available days for pickups and dropoffs.")
+		for availability_item in availability:
+			if not isinstance(availability_item, int):
+				raise ValueError(f"Volunteer {volunteer_id} availibility list must consist of integers greater than or equal to 0")
 		if not isinstance(max_pickups, int) or not max_pickups > 0:
 			raise ValueError(f"Volunteer {volunteer_id} must have a maximum number of pickups greater than 0.")
 
