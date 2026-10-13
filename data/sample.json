@@ -1,0 +1,20 @@
+{
+  "donations": [
+    {"id": "D-101", "donor_name": "Campus Catering", "food_type": "prepared meals", "quantity": 8, "expiry": 180, "area": "Central", "ready_time": 0},
+    {"id": "D-102", "donor_name": "Neighborhood Cafe", "food_type": "prepared meals", "quantity": 6, "expiry": 25, "area": "Central", "ready_time": 0},
+    {"id": "D-103", "donor_name": "Campus Event", "food_type": "prepared meals", "quantity": 4, "expiry": 45, "area": "Central", "ready_time": 0},
+    {"id": "D-104", "donor_name": "Market", "food_type": "produce", "quantity": 5, "expiry": 120, "area": "North", "ready_time": 20},
+    {"id": "D-105", "donor_name": "Bakery", "food_type": "baked goods", "quantity": 3, "expiry": 90, "area": "Central", "ready_time": 0},
+    {"id": "D-106", "donor_name": "Late Event", "food_type": "prepared meals", "quantity": 2, "expiry": 0, "area": "Central", "ready_time": 0},
+    {"id": "D-107", "donor_name": "Grocery", "food_type": "produce", "quantity": 9, "expiry": 100, "area": "North", "ready_time": 0},
+    {"id": "D-108", "donor_name": "Remote Market", "food_type": "produce", "quantity": 2, "expiry": 100, "area": "South", "ready_time": 0}
+  ],
+  "recipients": [
+    {"id": "R-101", "name": "Community Shelter", "accepted_food_types": ["prepared meals"], "capacity": 10, "area": "Central", "closing_time": 120},
+    {"id": "R-102", "name": "North Pantry", "accepted_food_types": ["produce"], "capacity": 15, "area": "North", "closing_time": 90}
+  ],
+  "volunteers": [
+    {"id": "V-101", "vehicle_capacity": 10, "area": "Central", "available_from": 0, "available_until": 120, "max_pickups": 3},
+    {"id": "V-102", "vehicle_capacity": 6, "area": "North", "available_from": 0, "available_until": 90, "max_pickups": 2}
+  ]
+}
