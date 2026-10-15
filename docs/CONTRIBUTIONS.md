@@ -26,7 +26,7 @@ fixes they actually made or reviewed.
 - What I can explain about the entire system:
 - Relevant commits:
 
-## Member 3 — comparison report owner
+## Member 3 — Dapinder Sidhu comparison report owner
 
 - Original scenario designed and results interpreted:
 - Report findings and fairness analysis:
