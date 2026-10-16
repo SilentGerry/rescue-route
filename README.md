@@ -40,9 +40,6 @@ An invalid input or option prints an actionable error and exits with status 2.
 - `tests/`: 35 automated tests covering scheduling, CLI integration, fairness,
   input errors, boundaries, state isolation, original sample compatibility, and
   actual integration with the preserved validators and food-matching helper.
-- `docs/DEMO.md`: live-demo steps and discussion prompts.
-- `docs/TEAMMATE_HANDOFF.md`: the one reserved deliverable, the short comparison report.
-- `docs/CONTRIBUTIONS.md`: individual contribution statement template.
 
 Lists preserve file order and decision history. Dictionaries keyed by ID track
 recipient capacity, volunteer pickup counts, and next available times. Sets detect
@@ -191,7 +188,7 @@ keeps the original samples useful while making the added scheduling assumptions 
 
 ## Team roles and contributions
 
-# Nathan Hoang - Algorithm & Optimaztion Lead:
+### Nathan Hoang - Algorithm & Optimaztion Lead:
 Adding JSON input loading and additional validation checks.
 Implementing FIFO and urgency-first greedy scheduling.
 Adding checks for recipient capacity, volunteer availability, vehicle capacity, pickup limits, locations, and deadlines.
@@ -200,14 +197,16 @@ Implementing rescue metrics and FIFO-versus-greedy comparisons.
 Adding sample input data and 35 automated tests.
 Expanding the README with setup instructions, algorithm explanations, complexity analysis, and limitations.
 
-# Gerardo D. Saucedo - Data & Matching Lead:
+### Gerardo D. Saucedo - Data & Matching Lead:
 Implemented data validation functions for Donation, Volunteer, and Recipient data sets.
 Implemented matching helper function for Recipient data sets by accepted food types.
 Established function outlines.
 Established initial data schema.
 Created and Managed GitHub repository for the project.
+Recorded demo video.
+Created presentation PowerPoint.
 
-# Dapinder Sidhu - Product & Quality Lead:
+### Dapinder Sidhu - Product & Quality Lead:
 Created FIFO vs Greedy comparison report. Including Fairness Analysis and Output Explanation.
 Reviewed completed project to ensure assignment requirements were met.
 
@@ -222,3 +221,4 @@ Reviewed completed project to ensure assignment requirements were met.
   and deterministic multi-field sorting.
 
 Repository: https://github.com/SilentGerry/rescue-route
+Demo Vidoe: https://adcsuf-my.sharepoint.com/:v:/g/personal/gerryd_csu_fullerton_edu/IQAyAQ0mmcRkQrpFUk3gGIZlAdniUnMLfrlzEaUhHaFOx1o?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=rSa6Ge
