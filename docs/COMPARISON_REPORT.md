@@ -60,6 +60,7 @@ In this test greedy saves 6 units and FIFO saves 14, and greedy gets nothing in 
 
 ```json
 {
+
   "donations": [
     {"id": "D-201", "donor_name": "Riverside Farm", "food_type": "produce", "quantity": 8, "expiry": 150, "area": "Central", "ready_time": 0},
     {"id": "D-202", "donor_name": "Corner Deli", "food_type": "prepared meals", "quantity": 6, "expiry": 40, "area": "Central", "ready_time": 0}
@@ -72,6 +73,8 @@ In this test greedy saves 6 units and FIFO saves 14, and greedy gets nothing in 
     {"id": "V-201", "vehicle_capacity": 10, "area": "Central", "available_from": 0, "available_until": 120, "max_pickups": 3}
   ]
 }
+```
+
 | Metric | FIFO | Greedy |
 | --- | --- | --- |
 | donations_assigned | 2 | 1 |
