@@ -191,25 +191,26 @@ keeps the original samples useful while making the added scheduling assumptions 
 
 ## Team roles and contributions
 
-The original foundation was committed by **gerry / SilentGerry**. It remains in
-`RescueRoute.py` and is used by the new application. See `docs/CHANGE_PROVENANCE.md`
-for the small fixes and added functionality; do not claim the original validators,
-schemas, samples, or food-matching helper as a new personal contribution.
+# Nathan Hoang - Algorithm & Optimaztion Lead:
+Adding JSON input loading and additional validation checks.
+Implementing FIFO and urgency-first greedy scheduling.
+Adding checks for recipient capacity, volunteer availability, vehicle capacity, pickup limits, locations, and deadlines.
+Adding explanations for assignments, rejections, and deferrals.
+Implementing rescue metrics and FIFO-versus-greedy comparisons.
+Adding sample input data and 35 automated tests.
+Expanding the README with setup instructions, algorithm explanations, complexity analysis, and limitations.
 
-Suggested primary roles are Algorithm & Optimization, Data & Matching, and Product
-& Quality; the team should agree who owns each role. Each person should review and
-understand the full system and make genuine contributions under their own Git identity.
-Record actual names and work in `docs/CONTRIBUTIONS.md`; no contributions or commit
-history are fabricated by this project scaffold.
+# Gerardo D. Saucedo - Data & Matching Lead:
+Implemented data validation functions for Donation, Volunteer, and Recipient data sets.
+Implemented matching helper function for Recipient data sets by accepted food types.
+Established function outlines.
+Established initial data schema.
+Created and Managed GitHub repository for the project.
 
-The **one intentionally unfinished project artifact is the short comparison report**.
-Its owner should complete `docs/COMPARISON_REPORT.md` using the handoff guide, add
-an independently designed scenario, and commit the analysis and scenario themselves.
-The code, metrics, tests, and demo guide are ready to support that work.
+# Dapinder Sidhu - Product & Quality Lead:
+Created FIFO vs Greedy comparison report. Including Fairness Analysis and Output Explanation.
+Reviewed completed project to ensure assignment requirements were met.
 
-Before submission, each member must also supply their own truthful contribution
-statement, and the team must provide its demo video link or confirm a live demo.
-These personal/submission facts cannot be filled in by the application.
 
 ## References
 
